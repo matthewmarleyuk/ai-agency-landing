@@ -1,6 +1,6 @@
-# Allow all user agents
+# Allow all crawlers
 User-agent: *
 Allow: /
 
 # Sitemap location
-Sitemap: https://agenticadvisory.com/sitemap.xml 
+Sitemap: https://matthewmarleyuk.github.io/ai-agency-landing/sitemap.xml 

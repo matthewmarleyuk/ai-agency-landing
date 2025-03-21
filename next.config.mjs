@@ -7,11 +7,19 @@ try {
 
 // Determine if this is a Vercel deployment
 const isVercel = process.env.NEXT_PUBLIC_DEPLOYMENT === 'vercel' || process.env.VERCEL;
+// Determine if this is a GitHub Pages deployment (for basePath config)
+const isGitHubPages = process.env.GITHUB_ACTIONS && !isVercel;
+const basePath = isGitHubPages ? '/ai-agency-landing' : '';
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   // Only use 'export' when not deploying to Vercel
   ...(isVercel ? {} : { output: 'export' }),
+  // Add basePath and assetPrefix for GitHub Pages
+  ...(isGitHubPages ? { 
+    basePath,
+    assetPrefix: basePath,
+  } : {}),
   eslint: {
     ignoreDuringBuilds: true,
   },
