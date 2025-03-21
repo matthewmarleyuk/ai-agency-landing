@@ -2,6 +2,11 @@
 
 A modern, responsive landing page for AgenticAdvisory, built with Next.js, React, and Tailwind CSS.
 
+## Deployment Status
+
+- GitHub Pages: [View Live Site](https://matthewmarleyuk.github.io/ai-agency-landing/)
+- Vercel: Using server-side rendering for optimal performance
+
 ## Features
 
 - Fully responsive design optimized for all device sizes
