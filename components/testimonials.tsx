@@ -8,21 +8,21 @@ export default function Testimonials() {
         "The customer service AI agent has reduced our overall response time by 80% and improved customer satisfaction scores by 35%. It's like having our best support agent available 24/7 for customers.",
       author: "Maria Rodriguez",
       title: "Experience Director, Global Retail",
-      avatar: "/images/maria-rodriguez.png",
+      avatar: "/images/testimonials/testimonial-1.jpg",
     },
     {
       quote:
         "Our data analysis AI agent identified cost-saving opportunities that resulted in $1.2M annual savings. The insights we're getting now would have required hiring three additional analysts.",
       author: "David Chen",
       title: "CFO, FinTech Solutions",
-      avatar: "/images/david-chen.png",
+      avatar: "/images/testimonials/testimonial-2.jpg",
     },
     {
       quote:
         "The lead generation agent has transformed our sales process. We've seen a 45% increase in qualified leads and our sales team can now focus on high-value activities instead of prospecting.",
       author: "Sarah Johnson",
       title: "VP of Sales, SaaS Enterprise",
-      avatar: "/images/sarah-johnson.png",
+      avatar: "/images/testimonials/testimonial-3.jpg",
     },
   ]
 

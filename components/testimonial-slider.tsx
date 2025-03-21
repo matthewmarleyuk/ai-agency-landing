@@ -12,28 +12,28 @@ export default function TestimonialSlider() {
         "AgenticAdvisory's automation expertise transformed our document processing workflows. What used to take days now happens in minutes with near-perfect accuracy.",
       name: "James Robertson",
       title: "CTO, FinTech Solutions Ltd",
-      image: "/images/james-robertson.png",
+      image: "/images/testimonials/testimonial-4.jpg",
     },
     {
       quote:
         "The customer service AI agent has reduced our response time by 80% and improved customer satisfaction scores by 35%. It's like having our best support agent available 24/7.",
       name: "Maria Rodriguez",
       title: "Customer Experience Director, Global Retail Inc.",
-      image: "/images/maria-rodriguez.png",
+      image: "/images/testimonials/testimonial-1.jpg",
     },
     {
       quote:
         "Our data analysis AI agent identified cost-saving opportunities that resulted in $1.2M annual savings. The insights we're getting now would have required hiring three additional analysts.",
       name: "David Chen",
       title: "CFO, FinTech Solutions",
-      image: "/images/david-chen.png",
+      image: "/images/testimonials/testimonial-2.jpg",
     },
     {
       quote:
         "The lead generation agent has transformed our sales process. We've seen a 45% increase in qualified leads and our sales team can now focus on high-value activities.",
       name: "Sarah Johnson",
       title: "VP of Sales, SaaS Enterprise",
-      image: "/images/sarah-johnson.png",
+      image: "/images/testimonials/testimonial-3.jpg",
     },
   ]
 
