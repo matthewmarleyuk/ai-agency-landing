@@ -5,8 +5,13 @@ try {
   // ignore error
 }
 
+// Determine if this is a Vercel deployment
+const isVercel = process.env.NEXT_PUBLIC_DEPLOYMENT === 'vercel' || process.env.VERCEL;
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  // Only use 'export' when not deploying to Vercel
+  ...(isVercel ? {} : { output: 'export' }),
   eslint: {
     ignoreDuringBuilds: true,
   },
@@ -40,6 +45,10 @@ function mergeConfig(nextConfig, userConfig) {
         ...userConfig[key],
       }
     } else {
+      // Only apply user config's output setting if not on Vercel
+      if (key === 'output' && isVercel) {
+        continue;
+      }
       nextConfig[key] = userConfig[key]
     }
   }
