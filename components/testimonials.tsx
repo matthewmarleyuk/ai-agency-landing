@@ -4,25 +4,28 @@ export default function Testimonials() {
   // Static version with all testimonials visible
   const testimonials = [
     {
+      name: "Maria Rodriguez",
+      role: "VP of Marketing",
+      company: "GlobalBrand",
       quote:
-        "The customer service AI agent has reduced our overall response time by 80% and improved customer satisfaction scores by 35%. It's like having our best support agent available 24/7 for customers.",
-      author: "Maria Rodriguez",
-      title: "Experience Director, Global Retail",
-      avatar: "/images/testimonials/1",
+        "Implementing this agency's AI solutions doubled our lead conversion rates and reduced customer acquisition costs by 40%. Their understanding of marketing needs is exceptional.",
+      image: "/images/testimonials/1.png",
     },
     {
+      name: "David Chen",
+      role: "Operations Director",
+      company: "LogisticsPro",
       quote:
-        "Our data analysis AI agent identified cost-saving opportunities that resulted in $1.2M annual savings. The insights we're getting now would have required hiring three additional analysts.",
-      author: "David Chen",
-      title: "CFO, FinTech Solutions",
-      avatar: "/images/testimonials/2",
+        "Their predictive AI models have optimized our supply chain beyond expectations. We've seen a 35% reduction in logistics costs and near-perfect inventory forecasting.",
+      image: "/images/testimonials/2.png",
     },
     {
+      name: "Sarah Johnson",
+      role: "Healthcare Administrator",
+      company: "MedLife Solutions",
       quote:
-        "The lead generation agent has transformed our sales process. We've seen a 45% increase in qualified leads and our sales team can now focus on high-value activities instead of prospecting.",
-      author: "Sarah Johnson",
-      title: "VP of Sales, SaaS Enterprise",
-      avatar: "/images/testimonials/3",
+        "Patient care has transformed since implementing their AI assistants. Our staff now focuses on critical care while routine tasks are handled seamlessly by their intelligent systems.",
+      image: "/images/testimonials/3.png",
     },
   ]
 
@@ -71,8 +74,8 @@ export default function Testimonials() {
                 <div className="mr-4">
                   <div className="w-12 h-12 rounded-full border-2 border-black overflow-hidden">
                     <img
-                      src={testimonial.avatar || "/placeholder.svg"}
-                      alt={testimonial.author}
+                      src={testimonial.image || "/placeholder.svg"}
+                      alt={testimonial.name}
                       className="w-full h-full object-cover"
                       loading="lazy"
                       onError={(e) => {
@@ -84,8 +87,8 @@ export default function Testimonials() {
                   </div>
                 </div>
                 <div>
-                  <p className="font-bold">{testimonial.author}</p>
-                  <p className="text-sm text-gray-600">{testimonial.title}</p>
+                  <p className="font-bold">{testimonial.name}</p>
+                  <p className="text-sm text-gray-600">{testimonial.role} at {testimonial.company}</p>
                 </div>
               </div>
             </div>

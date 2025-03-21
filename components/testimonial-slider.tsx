@@ -8,32 +8,36 @@ import { ChevronLeft, ChevronRight } from "lucide-react"
 export default function TestimonialSlider() {
   const testimonials = [
     {
-      quote:
-        "AgenticAdvisory's automation expertise transformed our document processing workflows. What used to take days now happens in minutes with near-perfect accuracy.",
       name: "James Robertson",
-      title: "CTO, FinTech Solutions Ltd",
-      image: "/images/testimonials/4",
+      role: "CTO at TechVision",
+      company: "TechVision",
+      quote:
+        "The AI agents developed by this agency have revolutionized our customer service. Response times improved by 80%, and customer satisfaction ratings are at an all-time high.",
+      image: "/images/testimonials/4.png",
     },
     {
-      quote:
-        "The customer service AI agent has reduced our response time by 80% and improved customer satisfaction scores by 35%. It's like having our best support agent available 24/7.",
       name: "Maria Rodriguez",
-      title: "Customer Experience Director, Global Retail Inc.",
-      image: "/images/testimonials/1",
+      role: "VP of Marketing",
+      company: "GlobalBrand",
+      quote:
+        "Implementing this agency's AI solutions doubled our lead conversion rates and reduced customer acquisition costs by 40%. Their understanding of marketing needs is exceptional.",
+      image: "/images/testimonials/1.png",
     },
     {
-      quote:
-        "Our data analysis AI agent identified cost-saving opportunities that resulted in $1.2M annual savings. The insights we're getting now would have required hiring three additional analysts.",
       name: "David Chen",
-      title: "CFO, FinTech Solutions",
-      image: "/images/testimonials/2",
+      role: "Operations Director",
+      company: "LogisticsPro",
+      quote:
+        "Their predictive AI models have optimized our supply chain beyond expectations. We've seen a 35% reduction in logistics costs and near-perfect inventory forecasting.",
+      image: "/images/testimonials/2.png",
     },
     {
-      quote:
-        "The lead generation agent has transformed our sales process. We've seen a 45% increase in qualified leads and our sales team can now focus on high-value activities.",
       name: "Sarah Johnson",
-      title: "VP of Sales, SaaS Enterprise",
-      image: "/images/testimonials/3",
+      role: "Healthcare Administrator",
+      company: "MedLife Solutions",
+      quote:
+        "Patient care has transformed since implementing their AI assistants. Our staff now focuses on critical care while routine tasks are handled seamlessly by their intelligent systems.",
+      image: "/images/testimonials/3.png",
     },
   ]
 
@@ -95,7 +99,7 @@ export default function TestimonialSlider() {
             <p className="text-xl mb-6 font-medium">"{testimonials[currentTestimonial].quote}"</p>
             <div>
               <p className="text-xl font-bold">{testimonials[currentTestimonial].name}</p>
-              <p className="text-gray-500">{testimonials[currentTestimonial].title}</p>
+              <p className="text-gray-500">{testimonials[currentTestimonial].role} at {testimonials[currentTestimonial].company}</p>
             </div>
           </div>
         </div>
