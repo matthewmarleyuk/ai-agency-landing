@@ -1,0 +1,28 @@
+# Enable rewriting
+RewriteEngine On
+
+# Handle 404 errors
+ErrorDocument 404 /404.html
+
+# Redirect all requests to index.html if the file doesn't exist
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ /index.html [L,QSA]
+
+# Set proper MIME types
+AddType text/css .css
+AddType application/javascript .js
+AddType image/svg+xml .svg
+AddType application/json .json
+
+# Cache control
+<FilesMatch "\.(html|htm)$">
+  Header set Cache-Control "max-age=0, no-cache, no-store, must-revalidate"
+  Header set Pragma "no-cache"
+  Header set Expires "Wed, 11 Jan 1984 05:00:00 GMT"
+</FilesMatch>
+
+<FilesMatch "\.(js|css|jpg|jpeg|png|gif|svg|ico|webp)$">
+  Header set Cache-Control "max-age=31536000, public"
+</FilesMatch>
+
